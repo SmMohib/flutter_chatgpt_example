@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+//https://www.youtube.com/watch?v=7AsHNDb0Vdo
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'model.dart';
@@ -31,7 +31,7 @@ class ChatPage extends StatefulWidget {
 }
 
 Future<String> generateResponse(String prompt) async {
-  const apiKey = apiSecretKey;
+  const apiKey = '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';
 
   var url = Uri.https("api.openai.com", "/v1/completions");
   final response = await http.post(
